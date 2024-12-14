@@ -1,0 +1,32 @@
+.input-wrapper {
+    margin-bottom: 16px;
+  }
+  
+  .input-label {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 4px;
+    display: block;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #007bff;
+  }
+  
+  .input.danger {
+    border-color: red;
+  }
+  
+  .input-label.danger {
+    color: red;
+  }
+  
