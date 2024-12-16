@@ -14,11 +14,11 @@
 import React from 'react';
 import './index.css';
 
-export const Button = ({ type = 'button', onClick, disabled, size = 'md', variant = 'primary', children }) => {
+export const Button = ({ type = 'button', onClick, disabled, size = 'md', variant = 'primary', customClass='', children }) => {
   return (
     <button
       type={type}
-      className={`button button-${variant} button-${size}`}
+      className={`button button-${variant} button-${size} ${customClass}`}
       onClick={onClick}
       disabled={disabled}
     >

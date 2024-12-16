@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './index.css';
+ import React, { useState } from 'react';
+ import './index.css';
 
 export const Accordion = ({ title, defaultOpen = false, children }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);

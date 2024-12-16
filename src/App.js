@@ -9,20 +9,21 @@ import { Accordion } from './components/Accordion';
 export const App = () => {
   return (
     <div style={{ fontFamily: 'Inter, sans-serif', padding: '16px' }}>
+      
       <Button variant="primary" size="lg">lg, primary</Button>
       <Button variant="primary" size="md">md, primary</Button>
       <Button variant="primary" size="sm">sm, primary</Button>
-      <Button class="button-primary" size="md">Hover</Button>
+      <Button size="md" customClass="primary-hover">Hover</Button>
+  
 
-      <div style={{ marginTop: '16px'}}></div>
-      <Button variant="bordered" size="lg">lg, bordered</Button>
-      <Button variant="bordered" size="md">md, bordered</Button>
-      <Button variant="bordered" size="sm">sm, bordered</Button>
-      <Button class="button-bordered" size="md">Hover</Button>
+      <div style={{marginTop: '16px'}}>
+        <Button variant="bordered" size="lg">lg, bordered</Button>
+        <Button variant="bordered" size="md">md, bordered</Button>
+        <Button variant="bordered" size="sm">sm, bordered</Button>
+        <Button variant="primary" size="md">Hover</Button>
+      </div>
 
       
-
-
 
 
       <Input label="Name" placeholder="Enter your name" />
@@ -40,9 +41,10 @@ export const App = () => {
 
       <Accordion title="Accordion Example" defaultOpen>
         Accordion content goes here.
-      </Accordion>
-    </div>
+      </Accordion> 
+
+    </div> 
   );
-};
+}; 
 
 export default App;
